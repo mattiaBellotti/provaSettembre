@@ -1,0 +1,10 @@
+ANALISI DEL PROBLEMA
+
+- 8 thread utilizzati + main
+- un thread per cercare le ore in tutte le righe divise e un thread per visualizzare orario completop
+- nei dati condiviso ho messo le righe e i vettori contenentio tutti gli oggetti delle righe divisi
+  con il parse. Inoltre ho messo il semaforo per gestire la sincronizzazione. Ci sono anche i metodi
+ riservati alla ricerca e alla visualizzazione.
+- ho messo l'accesso in mutua esclusione al mertodo che cerca e a quello che visualizza
+- sincronizzazione tra il thread che cerca e quello che visualizza. Quello visualizza non parte finchè
+  tutti e 7 i thread cerca non hanno finito.
